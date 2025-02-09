@@ -1,0 +1,96 @@
+\documentclass{replab}
+\usepackage{lipsum}
+
+% --- Información del documento ---
+\title{Práctica 1}
+\subtitle={Nombre de Práctica}
+\subject={Laboratorio de ...}
+
+\setlength{\columnsep}{14pt}
+
+% --- Archivo de bibliografía ---
+\addbibresource{ref.bib}
+
+% --- Inicio del documento ---
+\begin{document}
+	
+	\pagestyle{fancy}
+	\unspacedoperators
+	
+% --- Título ---
+\onecolumn
+        \begin{center}
+			\maketitle
+		\end{center}
+
+        \vspace*{\fill}
+        \begin{center}
+            \textit{Fecha de entrega: Fecha}
+        \end{center}
+
+
+\selectlanguage{spanish}
+\twocolumn
+
+% Titulo del Abstract
+\renewcommand{\abstractname}{Objetivos}
+	
+% --- Cuerpo del reporte ---
+
+\setcounter{page}{1}
+
+\twocolumn[
+	\begin{center}
+		\begin{onecolabstract}
+			Objetivos
+		\end{onecolabstract}
+	\end{center}
+]
+
+\bigskip
+	
+	\section{Introducción}
+
+Introducción
+
+Test
+
+\begin{figure}[hbt!]
+    \includegraphics[width=0.9\columnwidth]{escudos/unam.png}
+    \label{fig:figura1}
+    \caption{Prueba}
+\end{figure}
+
+Test    \cite{oda}
+
+	\section{Desarrollo Experimental}
+
+Desarrollo
+
+	\section{Resultados}
+
+Resultados
+
+    \section{Análisis y Discusión de Resultados}
+
+    Análisis
+
+	\section{Conclusiones}
+
+    Conclusiones
+
+\printbibliography[heading=bibintoc]
+
+\clearpage
+
+{
+\onecolumn
+\appendix
+\pagenumbering{alph}
+
+\section{Test}
+
+}
+
+
+\end{document}
